@@ -32,5 +32,9 @@ jobs:
       run: tree ./
     - uses: actions/upload-artifact@v4
       with:
-        name: Package
-        path: build
+        name: Fabric
+        path: fabric/build/libs
+    - uses: actions/upload-artifact@v4
+      with:
+        name: NeoForge
+        path: neoforge/build/libs

@@ -29,7 +29,7 @@ jobs:
     - name: Run build in a subdirectory
       run: ./gradlew build
     - name: LS
-      run: tree /
+      run: tree ./
     - uses: actions/upload-artifact@v4
       with:
         name: Package
